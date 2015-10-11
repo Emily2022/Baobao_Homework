@@ -21,7 +21,11 @@ def main():
     solution_filepath = os.path.join(PROJECT_ROOT_DIR,
                                      "solutions/" + solution_filename)
     if os.path.exists(solution_filepath):
-        suite = AES.new(answer_code, AES_MODE, answer_code)
+        try:
+            suite = AES.new(answer_code, AES_MODE, answer_code)
+        except ValueError:
+            print "错误: 检查你的answer code是否正确!"
+            sys.exit(1)
         print suite.decrypt(open(solution_filepath, 'r').read())
     else:
         print "没有编号为'%s', 名字叫做'solutions/practice%s.py'的文件存在" % (input_string, input_string)

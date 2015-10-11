@@ -1,6 +1,8 @@
 宝宝的作业
 ================================
 
+[![Build Status](https://travis-ci.org/walkerning/Baobao_Homework.svg?branch=master)](https://travis-ci.org/walkerning/Baobao_Homework)
+
 每个练习为practices包下的一个模块/包，模块/包顶层必须有可调用的
 solution对象(函数/其class实现了`__call__`特殊方法的对象)，传入参数检查返回结果
 

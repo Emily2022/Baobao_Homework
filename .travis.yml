@@ -8,3 +8,15 @@ install: "pip install -r requirements.txt"
 
 # command to run tests
 script: make test
+
+notifications:
+  email:
+    recipients:
+      - foxdoraame@gmail.comgi
+      - 871691613@qq.com
+      #- luxinran1995@hotmail.com
+      #- 1175267294@qq.com
+    on_success: always#change
+    on_failure: always
+
+  slack: babaandbaobao:DbTDdFEGk3oLXGnC2cWTZ32X
