@@ -1,0 +1,27 @@
+*.py[cod]
+
+*.o
+
+*.egg-info
+*.tmp
+
+pylint.out
+unittest.xml
+
+*.egg
+VENV/
+venv/
+
+*.bundle
+.cache/
+
+# better use your global git ignore
+.DS_Store
+.*~
+*~
+\#*\#
+
+
+# private
+*.private
+private.*
